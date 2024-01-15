@@ -1,0 +1,91 @@
+ :root{
+    --bs-blue: #037BC0;
+    --bs-green:#8cbc00;
+ }
+html{
+    font-size: 62.5%;/* convierte 1rem en 10px*/
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+h1,h2,h3{
+    font-family: 'Playfair Display',serif ;
+}
+h1{
+    font-size: 3.8rem;
+}
+@media (min-width: 768px){
+    h1{
+        font-size: 5rem;
+    }
+}
+h2{
+    font-size: 3.2rem;
+}
+@media (min-width: 768px){
+    h2{
+        font-size: 4rem;
+    }
+}
+h3{
+    font-size: 2.4rem;
+}
+@media (min-width: 768px){
+    h2{
+        font-size: 3rem;
+    }
+}
+/*REESCRIBIR COLORES*/
+.text-primary, .nombre-sitio{
+    color: var(--bs-blue)!important;
+}
+.bg-primary, .btn-primary{
+    background-color: var(--bs-blue)!important;
+}
+.btn-success{
+    background-color: var(--bs-green)!important;
+}
+
+.hero{
+    background-image: url(../img/principal.jpg);
+    height: 25rem;
+    background-size: cover;/*trata de llenar todo el espacio disponible*/
+    background-position: center center;
+}
+@media (min-width:768px) {
+    .hero{
+        height: 55rem;
+    }    
+}
+.producto img{
+
+}    
+@media (min-width:768px){
+    .producto img{
+    height: 45rem;
+    width: 100%;
+    object-fit: cover;/*corta la imagen para no deformar la imagen,es decir le da el tamaño deseado pero mantiene su apariencia*/ 
+    } 
+}
+.categoria img{
+    transition-property: transform;
+    transition-duration: 300ms;
+    
+}
+.categoria img:Hover{
+transform: scale(1.2);
+}
+
+.galeria li:not(:last-of-type) { /*aplica a todos los elementos de la lista excepto al ultimo*/
+    margin-bottom: 1rem;
+}
+
+
+.form-control{
+    padding: 1rem;
+    font-size: 1.6rem;
+}
